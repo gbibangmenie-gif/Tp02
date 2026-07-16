@@ -1,0 +1,287 @@
+/* Feuille de style - TP02 Page de presentation d'entreprise */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #333333;
+  line-height: 1.6;
+}
+
+a {
+  color: #4a6fa5;
+}
+
+/* En-tete et navigation */
+
+header.principal {
+  background-color: #ffffff;
+  border-bottom: 1px solid #dddddd;
+  padding: 15px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.logo {
+  font-size: 1.4em;
+  font-weight: bold;
+  color: #2c3e50;
+  text-decoration: none;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+nav ul li a {
+  display: block;
+  padding: 10px 15px;
+  color: #333333;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  color: #4a6fa5;
+}
+
+nav ul li a.actif {
+  color: #4a6fa5;
+  font-weight: bold;
+  border-bottom: 2px solid #4a6fa5;
+}
+
+/* Section hero */
+
+.hero {
+  background-color: #f5f8fc;
+  padding: 50px 20px;
+}
+
+.hero-contenu {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.hero-texte {
+  flex: 1;
+  min-width: 280px;
+}
+
+.hero-texte h1 {
+  color: #2c3e50;
+  font-size: 2.2em;
+  margin-bottom: 15px;
+}
+
+.hero-texte p {
+  font-size: 1.1em;
+  color: #555555;
+  margin-bottom: 25px;
+}
+
+.hero-image {
+  flex: 1;
+  min-width: 280px;
+}
+
+.hero-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+
+.bouton {
+  display: inline-block;
+  background-color: #4a6fa5;
+  color: #ffffff;
+  padding: 12px 25px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.bouton:hover {
+  background-color: #3a5a8a;
+}
+
+/* Sections generales */
+
+section {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 50px 20px;
+}
+
+section h2 {
+  color: #2c3e50;
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+/* Page A propos - equipe */
+
+.liste-equipe {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+}
+
+.membre {
+  background-color: #ffffff;
+  border: 1px solid #dddddd;
+  border-radius: 6px;
+  padding: 20px;
+  text-align: center;
+}
+
+.membre img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.membre h3 {
+  margin: 0 0 5px 0;
+  color: #2c3e50;
+}
+
+.membre .poste {
+  color: #4a6fa5;
+  font-size: 0.9em;
+  margin: 0 0 10px 0;
+}
+
+.membre p {
+  font-size: 0.9em;
+  color: #666666;
+}
+
+/* Page Services - grille de cartes */
+
+.grille-services {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+}
+
+.carte-service {
+  background-color: #ffffff;
+  border: 1px solid #dddddd;
+  border-radius: 6px;
+  padding: 25px;
+  text-align: center;
+}
+
+.carte-service .icone {
+  font-size: 2.2em;
+  margin-bottom: 15px;
+}
+
+.carte-service h3 {
+  color: #2c3e50;
+  margin: 0 0 10px 0;
+}
+
+.carte-service p {
+  color: #666666;
+  font-size: 0.95em;
+}
+
+/* Page Contact - formulaire */
+
+.formulaire-contact {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.champ {
+  margin-bottom: 18px;
+}
+
+.champ label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+.champ input,
+.champ select,
+.champ textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  font-family: inherit;
+  font-size: 1em;
+}
+
+.champ textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.champ-case {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.champ-case label {
+  margin: 0;
+  font-weight: normal;
+}
+
+.infos-contact {
+  max-width: 600px;
+  margin: 0 auto 40px auto;
+  background-color: #f5f8fc;
+  padding: 20px;
+  border-radius: 6px;
+}
+
+.infos-contact p {
+  margin: 8px 0;
+}
+
+/* Pied de page */
+
+footer.principal {
+  background-color: #2c3e50;
+  color: #ffffff;
+  text-align: center;
+  padding: 25px 20px;
+}
+
+footer.principal a {
+  color: #cccccc;
+}
+
+footer.principal ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 0;
+  margin: 10px 0 0 0;
+}
